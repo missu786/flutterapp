@@ -34,7 +34,7 @@ class LoggerService {
   static Future sendToServer(Map log) async {
 
     await http.post(
-      Uri.parse('https://yourdomain.com/api/save-log'),
+      Uri.parse('https://rholab.distrho.com/api/savelog'),
       headers: {
         'Content-Type': 'application/json',
         'x-api-key': '123456789'
